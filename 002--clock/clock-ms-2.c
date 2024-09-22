@@ -26,9 +26,6 @@ int main() {
 
             // Print date and full time including milliseconds
             printf("Current date and time: %s.%03ld\n", buffer, tv.tv_usec / 1000);
-            if ( current_tenth % 10 == 0  ) {
-                printf("\n");
-            }
         }
 
         // Sleep for a short duration to avoid busy waiting
